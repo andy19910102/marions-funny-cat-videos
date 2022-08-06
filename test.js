@@ -1,11 +1,11 @@
 const { YOUTUBE_API_KEY } = require('./config.json');
-const createMarion = require("./index.js")
+const createMarion = require("marions-funny-cat-videos")
 
 // Create the instance of Marion
 const marion = createMarion(YOUTUBE_API_KEY);
 
 // Get some funny cat videos
-marion.getFunnyCatVideos(3)
+marion.getFunnyCatVideos(25)
     .then(videoList => {
         console.log("videoList", videoList);
     })
@@ -14,4 +14,4 @@ marion.getFunnyCatVideos(3)
     });
 
 // Export CSV
-marion.exportFunnyCatVideosCSV("funny_cat_videos.csv", 3);
+marion.exportFunnyCatVideosCSV("funny_cat_videos.csv", 100);
