@@ -1,5 +1,6 @@
 const axios = require("axios");
 const moment = require("moment");
+const exportCSV = require("./exportCSV");
 
 class Marion {
     // Private property #YOUTUBE_API_KEY
@@ -40,6 +41,12 @@ class Marion {
                 .catch(err => {
                     console.log(err)
                 });
+        };
+
+        this.exportFunnyCatVideosCSV = async (fileName = "funny_cat_videos.csv", maxResults = 3) => {
+            const videoList = await this.getFunnyCatVideos(maxResults);
+            // console.log("videoList", videoList);
+            exportCSV(videoList, fileName);
         };
 
     }
