@@ -20,7 +20,7 @@ $ npm install marions-funny-cat-videos
 const createMarion = require("marions-funny-cat-videos")
 
 // Create the instance of Marion
-const marion = createMarion("YOUR_YOUTUBE_API");
+const marion = createMarion("YOUR_YOUTUBE_API_KEY");
 ```
 
 ### getFunnyCatVideos(maxResults = 3)
