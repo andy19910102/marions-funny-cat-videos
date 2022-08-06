@@ -1,3 +1,4 @@
+const fs = require('fs');
 const axios = require("axios");
 const moment = require("moment");
 const exportCSV = require("./exportCSV");
@@ -47,6 +48,14 @@ class Marion {
             const videoList = await this.getFunnyCatVideos(maxResults);
             // console.log("videoList", videoList);
             exportCSV(videoList, fileName);
+        };
+
+        this.exportFunnyCatVideosJSON = async (fileName = "funny_cat_videos.json", maxResults = 3) => {
+            const videoList = await this.getFunnyCatVideos(maxResults);
+            // console.log("videoList", videoList);
+            let data = JSON.stringify(videoList, null, 2);
+            fs.writeFileSync(fileName, data);
+            console.log(`\x1b[32m%s\x1b[0m`, `${fileName} has been created successfully.`)
         };
 
     }
