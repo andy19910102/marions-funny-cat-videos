@@ -1,6 +1,6 @@
 {
   "name": "marions-funny-cat-videos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Did you know the internet has CAT VIDEOS? Lots of them!",
   "main": "index.js",
   "scripts": {

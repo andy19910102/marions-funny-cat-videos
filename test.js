@@ -1,6 +1,5 @@
 const { YOUTUBE_API_KEY } = require('./config.json');
-// const createMarion = require("marions-funny-cat-videos");
-const createMarion = require("./index");
+const createMarion = require("marions-funny-cat-videos");
 
 // Create the instance of Marion
 const marion = createMarion(YOUTUBE_API_KEY);
