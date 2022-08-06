@@ -1,0 +1,27 @@
+{
+  "name": "marions-funny-cat-videos",
+  "version": "1.0.0",
+  "description": "Did you know the internet has CAT VIDEOS? Lots of them!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "marion",
+    "funny",
+    "cat",
+    "videos",
+    "better call saul"
+  ],
+  "author": {
+    "name": "Huang An Sheng",
+    "email": "andy19910102@gmail.com",
+    "url": "https://enn.design"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "moment": "^2.29.4"
+  }
+}
