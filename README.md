@@ -253,3 +253,12 @@ Export funny cat videos data into a CSV file.
 // Export CSV
 marion.exportFunnyCatVideosCSV("funny_cat_videos.csv", 100);
 ```
+
+### exportFunnyCatVideosJSON(fileName = "funny_cat_videos.json", maxResults = 3)
+
+Export funny cat videos data into a JSON file.
+
+```javascript
+// Export JSON
+marion.exportFunnyCatVideosJSON("funny_cat_videos.json", 3);
+```
